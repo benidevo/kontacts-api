@@ -87,7 +87,7 @@ The endpoints and responses are described below.
 
 `GET api/auth`
 
-    curl -i -H 'Accept: application/json' http://localhost:8000/api/auth
+    http://localhost:8000/api/auth
 
 ### Response
 
@@ -141,27 +141,25 @@ The endpoints and responses are described below.
 
 `GET api/contacts`
 
-    curl -i -H 'Accept: application/json' http://localhost:3500/api/contacts
+    http://localhost:3500/api/contacts
 
 ### Response
 
     {
-        "contact": [
-            {
-                "type": <string>,
-                "_id": <string>,
-                "name": <string>,
-                "email": <string>,
-                "phone": <string>,
-                "user": <string>,
-                "date": <string>,
-                "__v": <number>
-            }
+        [
+            "type": <string>,
+            "_id": <string>,
+            "name": <string>,
+            "email": <string>,
+            "phone": <string>,
+            "user": <string>,
+            "date": <string>,
+            "__v": <number>
         ]
     }
 
 
-## Update contact byID
+## Update contact by ID
 
 ### Request
 
@@ -187,7 +185,7 @@ The endpoints and responses are described below.
     }
 
 
-## Delete contact byID
+## Delete contact by ID
 
 ### Request
 
